@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeesCalculateCart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#E0E0E0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER BELOW"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"/>
+
+        <!-- User Inputs -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name and Surname"
+            android:textColorHint="@color/white"
+            android:padding="10dp"
+            android:height="48dp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textColorHint="@color/white"
+            android:padding="10dp"
+            android:height="48dp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:textColorHint="@color/white"
+            android:padding="10dp"
+            android:height="48dp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Course Selection Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Course"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"/>
+
+        <!-- Course Selection Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Six Month Course -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Six Month Course"
+                    android:layout_gravity="center"
+                    android:paddingBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnSelectSixMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Course"
+                    android:background="@android:color/black"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+            <!-- Six Week Course -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Six Week Course"
+                    android:layout_gravity="center"
+                    android:paddingBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnSelectSixWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Course"
+                    android:background="@android:color/black"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Sub-Options for Six Month Course -->
+        <LinearLayout
+            android:id="@+id/sixMonthOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnFirstAid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Aid"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btnSewing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sewing"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btnLandscaping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Landscaping"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btnLifeSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Life Skills"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <!-- Sub-Options for Six Week Course -->
+        <LinearLayout
+            android:id="@+id/sixWeekOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnChildMinding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Child Minding"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btnGardenMaintenance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Garden Maintenance"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btnCooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooking"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/btnCalculateCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Selected Course TextView -->
+        <TextView
+            android:id="@+id/tvSelectedCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Fee: "
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhereToFindUs">
+
+    <!-- Contact Us Heading -->
+    <TextView
+        android:id="@+id/ContactUsTextView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Contact Us!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/ContactUsDetailsTextView"
+        android:layout_width="371dp"
+        android:layout_height="212dp"
+        android:gravity="center_horizontal"
+        android:text="\n• Facebook: facebook.com/EmpoweringTheNation
+Twitter: twitter.com/EmpowerNation
+Instagram: instagram.com/EmpoweringTheNation\n• Phone Number: +27 11 123 4567\n• Donate Inquiries: donate@empoweringthenation.org\n• Volunteer Inquiries: volunteer@empoweringthenation.org\n• General contact: contact@empoweringthenation.org "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255" />
+
+    <!-- Locations Heading -->
+    <TextView
+        android:id="@+id/LocationHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Locations:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <!-- Location 1 -->
+    <TextView
+        android:id="@+id/location1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:paddingTop="8dp"
+        android:text="Location 1: Johannesburg (Google Maps)\nhttps://maps.app.goo.gl/bEs5ZPDyExv2exyMA"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
+    <!-- Location 2 -->
+    <TextView
+        android:id="@+id/location2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location 2: Pretoria (Google Maps)\nhttps://maps.app.goo.gl/P5aX3usTjDQDYrS8A"
+        android:textSize="16sp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:textColor="@android:color/black"
+        android:paddingTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location1"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <!-- Location 3 -->
+    <TextView
+        android:id="@+id/location3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location 3: Cape Town (Google Maps)\nhttps://maps.app.goo.gl/nz4aCwV2NTr1ErVT6"
+        android:textSize="16sp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:textColor="@android:color/black"
+        android:paddingTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location2"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnGoBackToFeesCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
