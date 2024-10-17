@@ -17,13 +17,15 @@ Empowering the Nation is dedicated to providing accessible training programs in 
 
 ⚫Contact Page: Easily accessible contact information.
 ## Technology stack
-⚫Platform: React Native
+⚫Platform: Android (built using Android Studio)
 
-⚫State Management: React Hooks
+⚫Languages: Java/Kotlin
 
-⚫Navigation: React Navigation
+⚫UI Design: XML for layout
 
-⚫Supported Platforms: Android, iOS
+⚫Backend Integration: (Optional) Can be integrated with Firebase or REST APIs for backend services
+
+⚫Supported Platforms: Android
 ## Usage
 Browse available courses, register for training programs, or calculate fees on the go.
 Contact Empowering the Nation through the app’s contact page.
