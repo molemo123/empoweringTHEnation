@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmpoweringTheNation"
         tools:targetApi="31">
+        <activity android:name=".NextActivity">
+        </activity>
         <activity
             android:name=".WhereToFindUs"
             android:exported="false" />

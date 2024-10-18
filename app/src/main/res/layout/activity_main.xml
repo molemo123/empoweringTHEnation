@@ -4,21 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#92a48b">
+
+    <!--Heading TextView-->
+
+    <!--Description TextView-->
 
     <TextView
         android:id="@+id/TextView"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="344dp"
+        android:layout_height="115dp"
+        android:fontFamily="@font/lobster_regular"
         android:gravity="center"
-        android:text="Empowering The Nation Mobile App!"
-        android:textSize="20sp"
+        android:text="Mobile App!"
+        android:textColor="@color/white"
+        android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
         android:id="@+id/drpMenu"
@@ -27,50 +35,49 @@
         android:text="Menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
+        app:layout_constraintVertical_bias="0.148" />
 
-    <!--Heading TextView-->
     <TextView
-        android:id="@+id/headingTextView"
-        android:layout_width="365dp"
-        android:layout_height="35dp"
-        android:gravity="center_horizontal|top"
-        android:text="Empowering The Nation"
+        android:id="@+id/descriptionTextView"
+        android:layout_width="313dp"
+        android:layout_height="297dp"
+        android:gravity="center_horizontal"
+        android:text="A small to mid-size enterprise by Precious Radebe. The purpose of this digital platform is to advertise the business on a wider scale, providing customers with information and quotations for requested services. Empowering The Nation offers skills training for domestic workers and gardeners, enhancing their employability when searching for a job or enabling them to start their own business."
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
-
-    <!--Description TextView-->
-    <TextView
-        android:id="@+id/descriptionTextView"
-        android:layout_width="382dp"
-        android:layout_height="200dp"
-        android:gravity="center_horizontal"
-        android:text="A small to mid-size enterprise by Precious Radebe. The purpose of this digital platform is to advertise the business on a wider scale, providing customers with information and quotations for requested services. Empowering The Nation offers skills training for domestic workers and gardeners, enhancing their employability when searching for a job or enabling them to start their own business."
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787" />
+        app:layout_constraintVertical_bias="0.983" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster_regular"
         android:text="Next"
+        android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintHorizontal_bias="0.993"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.989" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="370dp"
+        android:layout_height="338dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

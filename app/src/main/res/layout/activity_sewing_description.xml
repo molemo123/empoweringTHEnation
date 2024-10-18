@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SewingDescription">
+    tools:context=".SewingDescription"
+    android:background="#92a48b">
 
     <TextView
         android:id="@+id/SixMonthDetailTextView"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:fontFamily="@font/lobster_regular"
         android:gravity="center"
         android:text="Details Of Sewing Course!"
-        android:textSize="20sp"
+        android:textSize="23dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,26 +23,30 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <!--Description of Sewing Course-->
+
     <TextView
         android:id="@+id/SewingDescriptionTextView"
-        android:layout_width="382dp"
-        android:layout_height="200dp"
+        android:layout_width="370dp"
+        android:layout_height="306dp"
         android:gravity="center_horizontal"
         android:text="Sewing Fees: R1500\nPurpose: To provide alterations and new garment tailoring services. \nContent:\n• Types of stitches\n• Threading a sewing machine\n• Sewing buttons, zips, hems and seams\n• Alterations\n• Designing and sewing new garments"
-        android:textSize="16sp"
+        android:textSize="19dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787"/>
+        app:layout_constraintVertical_bias="0.91" />
 
     <Button
         android:id="@+id/btn5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="117dp"
+        android:fontFamily="@font/lobster_regular"
         android:text="Back"
+        android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.213"
@@ -50,8 +56,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="159dp"
-        android:layout_height="162dp"
+        android:layout_width="297dp"
+        android:layout_height="238dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

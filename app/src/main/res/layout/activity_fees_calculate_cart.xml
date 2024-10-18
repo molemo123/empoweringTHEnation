@@ -12,18 +12,20 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="16dp"
-        android:background="#E0E0E0">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="REGISTER BELOW"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:paddingBottom="20dp"/>
+        android:background="#92a48b">
 
         <!-- User Inputs -->
+        <TextView
+            android:layout_width="391dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="@font/lobster_regular"
+            android:paddingBottom="20dp"
+            android:text="register below"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,10 +63,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select Course"
-            android:textSize="18sp"
             android:layout_gravity="center"
-            android:paddingBottom="10dp"/>
+            android:fontFamily="@font/lobster_regular"
+            android:paddingBottom="10dp"
+            android:text="Select Course"
+            android:textSize="40dp"
+            android:textStyle="bold" />
 
         <!-- Course Selection Buttons -->
         <LinearLayout
@@ -83,19 +87,25 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Six Month Course"
                     android:layout_gravity="center"
-                    android:paddingBottom="10dp"/>
+                    android:fontFamily="@font/lobster_regular"
+                    android:paddingBottom="10dp"
+                    android:text="Six Month Course"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
 
                 <Button
                     android:id="@+id/btnSelectSixMonth"
-                    android:layout_width="wrap_content"
+                    android:layout_width="174dp"
                     android:layout_height="wrap_content"
-                    android:text="Select Course"
-                    android:background="@android:color/black"
-                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/simplebackgroundcolor"
+                    android:fontFamily="@font/lobster_regular"
                     android:padding="10dp"
-                    android:layout_marginBottom="10dp"/>
+                    android:text="Select Course"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    />
             </LinearLayout>
 
             <!-- Six Week Course -->
@@ -108,19 +118,24 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Six Week Course"
                     android:layout_gravity="center"
-                    android:paddingBottom="10dp"/>
+                    android:fontFamily="@font/lobster_regular"
+                    android:paddingBottom="10dp"
+                    android:text="Six Week Course"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
 
                 <Button
                     android:id="@+id/btnSelectSixWeek"
-                    android:layout_width="wrap_content"
+                    android:layout_width="178dp"
                     android:layout_height="wrap_content"
-                    android:text="Select Course"
+                    android:layout_marginBottom="10dp"
                     android:background="@android:color/black"
-                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/lobster_regular"
                     android:padding="10dp"
-                    android:layout_marginBottom="10dp"/>
+                    android:text="Select Course"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -208,14 +223,16 @@
         <!-- Calculate Button -->
         <Button
             android:id="@+id/btnCalculateCourse"
-            android:layout_width="wrap_content"
+            android:layout_width="117dp"
             android:layout_height="wrap_content"
-            android:text="Calculate"
-            android:background="@android:color/black"
-            android:textColor="@android:color/white"
             android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:fontFamily="@font/lobster_regular"
             android:padding="10dp"
-            android:layout_marginTop="20dp"/>
+            android:text="Calculate"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
 
         <!-- Selected Course TextView -->
         <TextView
@@ -235,20 +252,22 @@
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lobster_regular"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Next Button -->
     <Button
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lobster_regular"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cooking">
+    tools:context=".cooking"
+    android:background="#92a48b">
 
 
     <TextView
         android:id="@+id/SixWeekDetailTextView"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:fontFamily="@font/lobster_regular"
         android:gravity="center"
         android:text="Details Of Cooking!"
-        android:textSize="20sp"
+        android:textSize="23dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,11 +26,12 @@
     <!--Description of Cooking Course-->
     <TextView
         android:id="@+id/CookingDescriptionTextView"
-        android:layout_width="382dp"
-        android:layout_height="150dp"
+        android:layout_width="369dp"
+        android:layout_height="259dp"
         android:gravity="center_horizontal"
         android:text="Cooking Fees: R750\nPurpose: To prepare and cook nutritious family meals. \nContent:\n• Nutritional requirements for a healthy body\n• Types of protein, carbohydrates and vegetables\n• Planning meals\n• Preparation and cooking of meals"
-        android:textSize="16sp"
+        android:textSize="19dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
@@ -41,7 +44,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="117dp"
+        android:fontFamily="@font/lobster_regular"
         android:text="Back"
+        android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.213"
@@ -51,8 +56,8 @@
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="160dp"
-        android:layout_height="110dp"
+        android:layout_width="297dp"
+        android:layout_height="238dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

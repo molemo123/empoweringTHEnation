@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".firstaid_description">
+    tools:context=".firstaid_description"
+    android:background="#92a48b">
 
     <TextView
         android:id="@+id/SixMonthDetailTextView"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:fontFamily="@font/lobster_regular"
         android:gravity="center"
         android:text="Details Of First Aid Course!"
-        android:textSize="20sp"
+        android:textSize="23dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,26 +23,29 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <!--Description of First Aid Course-->
+
     <TextView
         android:id="@+id/FirstAidDescriptionTextView"
-        android:layout_width="382dp"
-        android:layout_height="200dp"
+        android:layout_width="367dp"
+        android:layout_height="273dp"
         android:gravity="center_horizontal"
         android:text="First Aid Fees: R1500\nPurpose: To provide first aid awareness and basic life support. \nContent:\n• Wounds and bleeding\n• Burns and fractures\n• Emergency scene management\n• Cardio-Pulmonary Resuscitation(CPR)\n• Respiratory distress e.g., Choking, blocked airway"
-        android:textSize="16sp"
+        android:textSize="19dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787"/>
+        app:layout_constraintVertical_bias="0.825" />
 
     <Button
         android:id="@+id/btn6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="117dp"
+        android:fontFamily="@font/lobster_regular"
         android:text="Back"
+        android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.213"
@@ -50,14 +55,13 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="159dp"
-        android:layout_height="162dp"
+        android:layout_width="297dp"
+        android:layout_height="238dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.248"
-        app:srcCompat="@drawable/firstaidxhaw"/>
+        app:layout_constraintVertical_bias="0.21"
+        app:srcCompat="@drawable/firstaidxhaw" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

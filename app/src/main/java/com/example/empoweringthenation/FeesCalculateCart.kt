@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -33,6 +34,22 @@ class FeesCalculateCart : AppCompatActivity() {
 
     private var selectedCourse: String? = null
     private var selectedSubCourse: String? = null
+
+    // Define fees
+    private val courseFees = mapOf(
+        "Six Month Course" to 500, // Base fee for Six Month Course
+        "Six Week Course" to 300    // Base fee for Six Week Course
+    )
+
+    private val subCourseFees = mapOf(
+        "First Aid" to 1500,
+        "Sewing" to 1500,
+        "Landscaping" to 1500,
+        "Life Skills" to 1500,
+        "Child Minding" to 750,
+        "Garden Maintenance" to 750,
+        "Cooking" to 750
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -79,59 +96,35 @@ class FeesCalculateCart : AppCompatActivity() {
         }
 
         // Handle sub-course selection for Six Month Course
-        btnFirstAid.setOnClickListener {
-            selectedSubCourse = "First Aid"
-            Toast.makeText(this, "First Aid selected", Toast.LENGTH_SHORT).show()
-        }
-
-        btnSewing.setOnClickListener {
-            selectedSubCourse = "Sewing"
-            Toast.makeText(this, "Sewing selected", Toast.LENGTH_SHORT).show()
-        }
-
-        btnLandscaping.setOnClickListener {
-            selectedSubCourse = "Landscaping"
-            Toast.makeText(this, "Landscaping selected", Toast.LENGTH_SHORT).show()
-        }
-
-        btnLifeSkills.setOnClickListener {
-            selectedSubCourse = "Life Skills"
-            Toast.makeText(this, "Life Skills selected", Toast.LENGTH_SHORT).show()
-        }
+        btnFirstAid.setOnClickListener { setSubCourseSelection("First Aid") }
+        btnSewing.setOnClickListener { setSubCourseSelection("Sewing") }
+        btnLandscaping.setOnClickListener { setSubCourseSelection("Landscaping") }
+        btnLifeSkills.setOnClickListener { setSubCourseSelection("Life Skills") }
 
         // Handle sub-course selection for Six Week Course
-        btnChildMinding.setOnClickListener {
-            selectedSubCourse = "Child Minding"
-            Toast.makeText(this, "Child Minding selected", Toast.LENGTH_SHORT).show()
-        }
-
-        btnGardenMaintenance.setOnClickListener {
-            selectedSubCourse = "Garden Maintenance"
-            Toast.makeText(this, "Garden Maintenance selected", Toast.LENGTH_SHORT).show()
-        }
-
-        btnCooking.setOnClickListener {
-            selectedSubCourse = "Cooking"
-            Toast.makeText(this, "Cooking selected", Toast.LENGTH_SHORT).show()
-        }
+        btnChildMinding.setOnClickListener { setSubCourseSelection("Child Minding") }
+        btnGardenMaintenance.setOnClickListener { setSubCourseSelection("Garden Maintenance") }
+        btnCooking.setOnClickListener { setSubCourseSelection("Cooking") }
 
         // Calculate and display selected course and sub-course
         btnCalculateCourse.setOnClickListener {
             if (selectedCourse != null && selectedSubCourse != null) {
-                tvSelectedCourse.text = "Selected: $selectedCourse - $selectedSubCourse"
+                val courseFee = courseFees[selectedCourse]
+                val subCourseFee = subCourseFees[selectedSubCourse]
+                val totalFee = courseFee!! + subCourseFee!!
+
+                tvSelectedCourse.text = "Selected Course: $selectedCourse\n" +
+                        "Selected Sub-Course: $selectedSubCourse\n" +
+                        "Total Fee: $totalFee"
             } else {
                 Toast.makeText(this, "Please select a course and sub-course", Toast.LENGTH_SHORT).show()
             }
         }
 
-        // Handle back button
-        btnBack.setOnClickListener {
-            startActivity(Intent(this, SixMonthSummary::class.java))
-        }
-
-        // Handle next button
+        // Handle navigation buttons
+        btnBack.setOnClickListener { onBackPressed() }
         btnNext.setOnClickListener {
-            startActivity(Intent(this, WhereToFindUs::class.java))
+            setContentView(R.layout.activity_where_to_find_us)
         }
     }
 
@@ -141,9 +134,12 @@ class FeesCalculateCart : AppCompatActivity() {
     }
 
     private fun showSixWeekOptions() {
-        findViewById<View>(R.id.sixWeekOptions).visibility = View.VISIBLE
         findViewById<View>(R.id.sixMonthOptions).visibility = View.GONE
+        findViewById<View>(R.id.sixWeekOptions).visibility = View.VISIBLE
+    }
+
+    private fun setSubCourseSelection(subCourse: String) {
+        selectedSubCourse = subCourse
+        Toast.makeText(this, "Sub-course $subCourse selected", Toast.LENGTH_SHORT).show()
     }
 }
-
-

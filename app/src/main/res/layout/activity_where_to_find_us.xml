@@ -5,16 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WhereToFindUs">
+    tools:context=".WhereToFindUs"
+    android:background="#92a48b">
 
     <!-- Contact Us Heading -->
     <TextView
         android:id="@+id/ContactUsTextView"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:fontFamily="@font/lobster_regular"
         android:gravity="center"
         android:text="Contact Us!"
-        android:textSize="20sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,27 +24,33 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05" />
 
+    <!-- Locations Heading -->
+
+    <!-- Location 1 -->
+
     <TextView
         android:id="@+id/ContactUsDetailsTextView"
-        android:layout_width="371dp"
-        android:layout_height="212dp"
+        android:layout_width="359dp"
+        android:layout_height="289dp"
         android:gravity="center_horizontal"
         android:text="\n• Facebook: facebook.com/EmpoweringTheNation
 Twitter: twitter.com/EmpowerNation
 Instagram: instagram.com/EmpoweringTheNation\n• Phone Number: +27 11 123 4567\n• Donate Inquiries: donate@empoweringthenation.org\n• Volunteer Inquiries: volunteer@empoweringthenation.org\n• General contact: contact@empoweringthenation.org "
-        android:textSize="16sp"
+        android:textSize="17dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255" />
+        app:layout_constraintVertical_bias="0.144" />
 
-    <!-- Locations Heading -->
+    <!-- Location 2 -->
+
     <TextView
         android:id="@+id/LocationHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster_regular"
         android:text="Our Locations:"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -50,9 +58,8 @@ Instagram: instagram.com/EmpoweringTheNation\n• Phone Number: +27 11 123 4567\
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintVertical_bias="0.463" />
 
-    <!-- Location 1 -->
     <TextView
         android:id="@+id/location1"
         android:layout_width="wrap_content"
@@ -61,53 +68,59 @@ Instagram: instagram.com/EmpoweringTheNation\n• Phone Number: +27 11 123 4567\
         android:linksClickable="true"
         android:paddingTop="8dp"
         android:text="Location 1: Johannesburg (Google Maps)\nhttps://maps.app.goo.gl/bEs5ZPDyExv2exyMA"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683" />
+        app:layout_constraintVertical_bias="0.594" />
 
-    <!-- Location 2 -->
+    <!-- Location 3 -->
+
+    <!-- Back Button -->
     <TextView
         android:id="@+id/location2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Location 2: Pretoria (Google Maps)\nhttps://maps.app.goo.gl/P5aX3usTjDQDYrS8A"
-        android:textSize="16sp"
         android:autoLink="web"
         android:linksClickable="true"
-        android:textColor="@android:color/black"
         android:paddingTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Location 2: Durban (Google Maps)\nhttps://maps.app.goo.gl/P5aX3usTjDQDYrS8A"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/location1"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.122" />
 
-    <!-- Location 3 -->
     <TextView
         android:id="@+id/location3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Location 3: Cape Town (Google Maps)\nhttps://maps.app.goo.gl/nz4aCwV2NTr1ErVT6"
-        android:textSize="16sp"
         android:autoLink="web"
         android:linksClickable="true"
-        android:textColor="@android:color/black"
         android:paddingTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Location 3: Cape Town (Google Maps)\nhttps://maps.app.goo.gl/nz4aCwV2NTr1ErVT6"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/location2"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.17" />
 
-    <!-- Back Button -->
     <Button
         android:id="@+id/btnGoBackToFeesCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster_regular"
         android:text="Back"
+        android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.103"

@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".gardenmaintenance">
+    tools:context=".gardenmaintenance"
+    android:background="#92a48b">
 
     <TextView
         android:id="@+id/SixWeekDetailTextView"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:fontFamily="@font/lobster_regular"
         android:gravity="center"
         android:text="Garden Maintenance!"
-        android:textSize="20sp"
+        android:textSize="23dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,26 +23,30 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <!--Description of Garden Maintenance Course-->
+
     <TextView
         android:id="@+id/GardenMaintenanceDescriptionTextView"
-        android:layout_width="382dp"
-        android:layout_height="150dp"
+        android:layout_width="376dp"
+        android:layout_height="282dp"
         android:gravity="center_horizontal"
         android:text="Garden Maintenance Fees: R750\nPurpose: To provide basic knowledge of watering, pruning and planting in a domestic garden. \nContent:\n• Water restrictions and the watering requirements of indigenous and exotic plants\n• Pruning and propagation of plants\n• Planting techniques for different plant types"
-        android:textSize="16sp"
+        android:textSize="19dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787" />
+        app:layout_constraintVertical_bias="0.821" />
 
     <Button
         android:id="@+id/btn12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="117dp"
+        android:fontFamily="@font/lobster_regular"
         android:text="Back"
+        android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.213"
@@ -50,13 +56,13 @@
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="153dp"
-        android:layout_height="111dp"
+        android:layout_width="297dp"
+        android:layout_height="238dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.266"
+        app:layout_constraintVertical_bias="0.204"
         app:srcCompat="@drawable/gardenmaintenance" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
